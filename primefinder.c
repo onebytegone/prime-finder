@@ -7,7 +7,6 @@
 //  Released under the MIT Licence. Please see LICENSE.md.
 //
 
-
 #include <stdio.h>
 #include <string.h>
 
@@ -33,7 +32,7 @@ int main (void) {
         int i;
         int isPrime = 1;  // Assume number is prime to begin with
 
-        for (i=0; primes[i] != -1; i++) {
+        for (i = 0; primes[i] != -1; i++) {
             if (number%primes[i] == 0) {  // See if number is divisiable by another prime
                 isPrime = 0;
                 break;
@@ -47,10 +46,10 @@ int main (void) {
         }
 
 
-        number+=2;  // Increment by 2 so only looking at odd values
+        number += 2;  // Increment by 2 so only looking at odd values
     }
 
-    printf("Prime Count: %i\n", numberOfPrimes+2);  // Print number found. 2 must be added due to 1 & 2.
+    printf("Prime Count: %i\n", numberOfPrimes + 2);  // Print number found. 2 must be added due to 1 & 2.
 
     return 0;
 }
